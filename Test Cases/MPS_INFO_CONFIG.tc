@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>기본정보-기본설정</description>
+   <name>MPS_INFO_CONFIG</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd699b23-2ead-4e5c-8ae6-238fd1f379bf</testCaseGuid>
+</TestCaseEntity>

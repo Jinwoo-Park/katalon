@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>테스트케이스 001
+로그인 테스트</description>
+   <name>TestCase_001</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>11f8d557-4ecf-489b-a98d-3b25eb79c56f</testCaseGuid>
+</TestCaseEntity>

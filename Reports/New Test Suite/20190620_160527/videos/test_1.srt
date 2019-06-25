@@ -1,0 +1,212 @@
+1
+00:00:00,441 --> 00:00:00,445
+1. viewProject = false
+
+2
+00:00:00,453 --> 00:00:00,455
+5. viewPrint = true
+
+3
+00:00:00,456 --> 00:00:00,458
+9. viewScan = false
+
+4
+00:00:00,459 --> 00:00:00,461
+13. viewFax = false
+
+5
+00:00:00,462 --> 00:00:00,465
+17. viewElog = true
+
+6
+00:00:00,466 --> 00:00:00,469
+21. viewEDevice = true
+
+7
+00:00:00,470 --> 00:00:00,472
+25. viewSlog = false
+
+8
+00:00:00,473 --> 00:00:00,475
+29. openBrowser("")
+
+9
+00:00:10,663 --> 00:00:10,669
+33. maximizeWindow()
+
+10
+00:00:12,146 --> 00:00:12,152
+37. navigateToUrl("http://10.1.112.225:8080/")
+
+11
+00:00:13,141 --> 00:00:13,144
+41. waitForPageLoad(0)
+
+12
+00:00:13,480 --> 00:00:13,481
+45. setText(findTestObject("Page_login/input_loginID"), "Administrator")
+
+13
+00:00:14,140 --> 00:00:14,141
+49. setEncryptedText(findTestObject("Page_login/input_loginPW"), "8SQVv/p9jVScEs4/2CZsLw==")
+
+14
+00:00:14,368 --> 00:00:14,369
+53. click(findTestObject("Page_login/input_loginAction"))
+
+15
+00:00:15,047 --> 00:00:15,048
+57. waitForJQueryLoad(0, STOP_ON_FAILURE)
+
+16
+00:00:15,714 --> 00:00:15,721
+61. waitForElementNotVisible(findTestObject("Page_common/div_loading"), 5)
+
+17
+00:00:20,938 --> 00:00:20,939
+65. click(findTestObject("Page_info/a_info_service"))
+
+18
+00:00:21,477 --> 00:00:21,481
+69. delay(1)
+
+19
+00:00:22,544 --> 00:00:22,546
+73. click(findTestObject("Page_info/a_info_config"))
+
+20
+00:00:23,577 --> 00:00:23,585
+77. delay(1)
+
+21
+00:00:24,587 --> 00:00:24,588
+81. click(findTestObject("Page_info/a_info_device"))
+
+22
+00:00:24,908 --> 00:00:24,909
+85. delay(1)
+
+23
+00:00:25,911 --> 00:00:25,912
+89. click(findTestObject("Page_info/a_info_wm"))
+
+24
+00:00:26,205 --> 00:00:26,207
+93. delay(1)
+
+25
+00:00:27,265 --> 00:00:27,266
+97. click(findTestObject("Page_info/a_info_policy"))
+
+26
+00:00:27,737 --> 00:00:27,738
+101. delay(1)
+
+27
+00:00:28,740 --> 00:00:28,742
+105. click(findTestObject("Page_info/a_info_group"))
+
+28
+00:00:29,007 --> 00:00:29,009
+109. delay(1)
+
+29
+00:00:30,017 --> 00:00:30,019
+113. click(findTestObject("Page_info/a_info_user"))
+
+30
+00:00:31,109 --> 00:00:31,110
+117. delay(1)
+
+31
+00:00:32,113 --> 00:00:32,114
+121. click(findTestObject("Page_info/a_info_board"))
+
+32
+00:00:32,513 --> 00:00:32,515
+125. delay(1)
+
+33
+00:00:33,528 --> 00:00:33,528
+129. click(findTestObject("Page_info/a_info_oper"))
+
+34
+00:00:33,765 --> 00:00:33,766
+133. delay(1)
+
+35
+00:00:34,769 --> 00:00:34,770
+137. if (viewProject)
+
+36
+00:00:34,770 --> 00:00:34,771
+141. if (viewPrint)
+
+37
+00:00:34,772 --> 00:00:34,772
+1. click(findTestObject("Page_print/a_print"))
+
+38
+00:00:35,147 --> 00:00:35,153
+5. delay(1)
+
+39
+00:00:36,158 --> 00:00:36,159
+9. click(findTestObject("Page_print/a_print_aprint"))
+
+40
+00:00:36,342 --> 00:00:36,342
+13. delay(1)
+
+41
+00:00:37,347 --> 00:00:37,352
+17. click(findTestObject("Page_print/a_print_aprintbak"))
+
+42
+00:00:37,601 --> 00:00:37,602
+21. delay(1)
+
+43
+00:00:38,604 --> 00:00:38,605
+145. if (viewElog)
+
+44
+00:00:38,606 --> 00:00:38,607
+1. click(findTestObject("Page_elog/a_elog"))
+
+45
+00:00:43,397 --> 00:00:43,398
+5. delay(1)
+
+46
+00:00:44,402 --> 00:00:44,402
+9. click(findTestObject("Page_elog/a_elog_statistic"))
+
+47
+00:00:45,517 --> 00:00:45,521
+13. delay(1)
+
+48
+00:00:46,525 --> 00:00:46,526
+17. click(findTestObject("Page_elog/a_elog_ausage"))
+
+49
+00:00:47,300 --> 00:00:47,303
+21. delay(1)
+
+50
+00:00:48,309 --> 00:00:48,310
+25. click(findTestObject("Page_elog/a_elog_adetail"))
+
+51
+00:00:48,907 --> 00:00:48,908
+29. delay(1)
+
+52
+00:00:49,913 --> 00:00:49,916
+33. if (viewProject)
+
+53
+00:00:49,922 --> 00:00:49,924
+37. click(findTestObject("Page_elog/a_elog_tree"))
+

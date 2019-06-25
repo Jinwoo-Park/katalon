@@ -1,0 +1,456 @@
+1
+00:00:00,415 --> 00:00:00,416
+1. openBrowser("")
+
+2
+00:00:09,132 --> 00:00:09,134
+5. maximizeWindow()
+
+3
+00:00:10,430 --> 00:00:10,431
+9. navigateToUrl("http://10.1.112.225:8080/")
+
+4
+00:00:11,183 --> 00:00:11,186
+13. waitForPageLoad(0)
+
+5
+00:00:11,254 --> 00:00:11,256
+17. setText(findTestObject("Page_login/input_loginID"), "Administrator")
+
+6
+00:00:11,628 --> 00:00:11,630
+21. setEncryptedText(findTestObject("Page_login/input_loginPW"), "8SQVv/p9jVScEs4/2CZsLw==")
+
+7
+00:00:11,801 --> 00:00:11,802
+25. click(findTestObject("Page_login/input_loginAction"))
+
+8
+00:00:12,519 --> 00:00:12,520
+29. waitForJQueryLoad(0, STOP_ON_FAILURE)
+
+9
+00:00:13,114 --> 00:00:13,115
+33. delay(1)
+
+10
+00:00:14,131 --> 00:00:14,132
+37. click(findTestObject("Page_info/a_info_config"))
+
+11
+00:00:14,594 --> 00:00:14,595
+41. loginType = getAttribute(findTestObject("Page_info/Page_info_general/select_loginType"), "value")
+
+12
+00:00:14,719 --> 00:00:14,720
+45. ldapServer = getAttribute(findTestObject("Page_info/Page_info_general/input_ldapServer"), "value")
+
+13
+00:00:14,777 --> 00:00:14,778
+49. ldapPort = getAttribute(findTestObject("Page_info/Page_info_general/input_ldapPort"), "value")
+
+14
+00:00:14,865 --> 00:00:14,865
+53. ldapId = getAttribute(findTestObject("Page_info/Page_info_general/input_ldapId"), "value")
+
+15
+00:00:14,911 --> 00:00:14,912
+57. ldapPassword = getAttribute(findTestObject("Page_info/Page_info_general/input_ldapPassword"), "value")
+
+16
+00:00:14,958 --> 00:00:14,958
+61. ldapUserName = getAttribute(findTestObject("Page_info/Page_info_general/input_ldapUserName"), "value")
+
+17
+00:00:14,996 --> 00:00:14,997
+65. ldapGroupName = getAttribute(findTestObject("Page_info/Page_info_general/input_ldapGroupName"), "value")
+
+18
+00:00:15,154 --> 00:00:15,155
+69. selectOptionByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 0)
+
+19
+00:00:15,260 --> 00:00:15,261
+73. click(findTestObject("Page_info/Page_info_general/a_limitConfig"))
+
+20
+00:00:15,390 --> 00:00:15,391
+77. waitForJQueryLoad(0, STOP_ON_FAILURE)
+
+21
+00:00:15,950 --> 00:00:15,951
+81. delay(1)
+
+22
+00:00:16,953 --> 00:00:16,955
+85. verifyOptionSelectedByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 0, 2)
+
+23
+00:00:17,097 --> 00:00:17,098
+89. selectOptionByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 1)
+
+24
+00:00:17,214 --> 00:00:17,215
+93. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapServer"))
+
+25
+00:00:17,287 --> 00:00:17,287
+97. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapPort"))
+
+26
+00:00:17,333 --> 00:00:17,334
+101. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapId"))
+
+27
+00:00:17,368 --> 00:00:17,368
+105. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapPassword"))
+
+28
+00:00:17,403 --> 00:00:17,404
+109. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapUserName"))
+
+29
+00:00:17,480 --> 00:00:17,481
+113. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapGroupName"))
+
+30
+00:00:17,549 --> 00:00:17,550
+117. setText(findTestObject("Page_info/Page_info_general/input_ldapServer"), "LDAP_SERVER")
+
+31
+00:00:18,151 --> 00:00:18,153
+121. setText(findTestObject("Page_info/Page_info_general/input_ldapPort"), "389")
+
+32
+00:00:18,545 --> 00:00:18,546
+125. setText(findTestObject("Page_info/Page_info_general/input_ldapId"), "mappe@canon-bs.co.kr")
+
+33
+00:00:19,051 --> 00:00:19,052
+129. setText(findTestObject("Page_info/Page_info_general/input_ldapPassword"), "")
+
+34
+00:00:19,312 --> 00:00:19,313
+133. setText(findTestObject("Page_info/Page_info_general/input_ldapUserName"), "OU=Members,DC=CANON-BS,DC=CO,DC=KR")
+
+35
+00:00:20,303 --> 00:00:20,304
+137. setText(findTestObject("Page_info/Page_info_general/input_ldapGroupName"), "OU=Groups,DC=CANON-BS,DC=CO,DC=KR")
+
+36
+00:00:21,540 --> 00:00:21,541
+141. click(findTestObject("Page_info/Page_info_general/a_limitConfig"))
+
+37
+00:00:21,994 --> 00:00:21,995
+145. waitForJQueryLoad(0, STOP_ON_FAILURE)
+
+38
+00:00:22,719 --> 00:00:22,720
+149. delay(1)
+
+39
+00:00:23,721 --> 00:00:23,722
+153. verifyOptionSelectedByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 1, 2)
+
+40
+00:00:23,883 --> 00:00:23,884
+157. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapServer"), "value", "LDAP_SERVER", 0)
+
+41
+00:00:23,921 --> 00:00:23,921
+161. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapPort"), "value", "389", 0)
+
+42
+00:00:23,983 --> 00:00:23,984
+165. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapId"), "value", "mappe@canon-bs.co.kr", 0)
+
+43
+00:00:24,011 --> 00:00:24,012
+169. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapPassword"), "value", "", 0)
+
+44
+00:00:24,061 --> 00:00:24,062
+173. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapUserName"), "value", "OU=Members,DC=CANON-BS,DC=CO,DC=KR", 0)
+
+45
+00:00:24,109 --> 00:00:24,109
+177. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapGroupName"), "value", "OU=Groups,DC=CANON-BS,DC=CO,DC=KR", 0)
+
+46
+00:00:24,151 --> 00:00:24,152
+181. selectOptionByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 2)
+
+47
+00:00:24,311 --> 00:00:24,313
+185. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapServer"))
+
+48
+00:00:24,526 --> 00:00:24,527
+189. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapPort"))
+
+49
+00:00:24,578 --> 00:00:24,579
+193. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapId"))
+
+50
+00:00:24,615 --> 00:00:24,615
+197. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapPassword"))
+
+51
+00:00:24,669 --> 00:00:24,670
+201. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapUserName"))
+
+52
+00:00:24,779 --> 00:00:24,780
+205. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapGroupName"))
+
+53
+00:00:24,817 --> 00:00:24,818
+209. setText(findTestObject("Page_info/Page_info_general/input_ldapServer"), "LDAP_SERVER")
+
+54
+00:00:25,148 --> 00:00:25,150
+213. setText(findTestObject("Page_info/Page_info_general/input_ldapPort"), "389")
+
+55
+00:00:25,335 --> 00:00:25,336
+217. setText(findTestObject("Page_info/Page_info_general/input_ldapId"), "mappe@canon-bs.co.kr")
+
+56
+00:00:26,019 --> 00:00:26,020
+221. setText(findTestObject("Page_info/Page_info_general/input_ldapPassword"), "")
+
+57
+00:00:26,336 --> 00:00:26,338
+225. setText(findTestObject("Page_info/Page_info_general/input_ldapUserName"), "OU=Members,DC=CANON-BS,DC=CO,DC=KR")
+
+58
+00:00:28,010 --> 00:00:28,010
+229. setText(findTestObject("Page_info/Page_info_general/input_ldapGroupName"), "OU=Groups,DC=CANON-BS,DC=CO,DC=KR")
+
+59
+00:00:28,634 --> 00:00:28,636
+233. click(findTestObject("Page_info/Page_info_general/a_limitConfig"))
+
+60
+00:00:28,747 --> 00:00:28,748
+237. waitForJQueryLoad(0, STOP_ON_FAILURE)
+
+61
+00:00:29,373 --> 00:00:29,374
+241. delay(1)
+
+62
+00:00:30,379 --> 00:00:30,380
+245. verifyOptionSelectedByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 2, 2)
+
+63
+00:00:30,509 --> 00:00:30,509
+249. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapServer"), "value", "LDAP_SERVER", 0)
+
+64
+00:00:30,560 --> 00:00:30,560
+253. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapPort"), "value", "389", 0)
+
+65
+00:00:30,694 --> 00:00:30,694
+257. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapId"), "value", "mappe@canon-bs.co.kr", 0)
+
+66
+00:00:30,720 --> 00:00:30,720
+261. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapPassword"), "value", "", 0)
+
+67
+00:00:30,777 --> 00:00:30,778
+265. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapUserName"), "value", "OU=Members,DC=CANON-BS,DC=CO,DC=KR", 0)
+
+68
+00:00:30,827 --> 00:00:30,828
+269. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapGroupName"), "value", "OU=Groups,DC=CANON-BS,DC=CO,DC=KR", 0)
+
+69
+00:00:30,869 --> 00:00:30,872
+273. selectOptionByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 3)
+
+70
+00:00:31,077 --> 00:00:31,078
+277. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapServer"))
+
+71
+00:00:31,195 --> 00:00:31,196
+281. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapPort"))
+
+72
+00:00:31,224 --> 00:00:31,224
+285. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapId"))
+
+73
+00:00:31,318 --> 00:00:31,319
+289. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapPassword"))
+
+74
+00:00:31,362 --> 00:00:31,363
+293. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapUserName"))
+
+75
+00:00:31,400 --> 00:00:31,401
+297. verifyElementVisible(findTestObject("Page_info/Page_info_general/input_ldapGroupName"))
+
+76
+00:00:31,447 --> 00:00:31,448
+301. setText(findTestObject("Page_info/Page_info_general/input_ldapServer"), "LDAP_SERVER")
+
+77
+00:00:31,764 --> 00:00:31,765
+305. setText(findTestObject("Page_info/Page_info_general/input_ldapPort"), "389")
+
+78
+00:00:31,895 --> 00:00:31,895
+309. setText(findTestObject("Page_info/Page_info_general/input_ldapId"), "mappe@canon-bs.co.kr")
+
+79
+00:00:32,263 --> 00:00:32,264
+313. setText(findTestObject("Page_info/Page_info_general/input_ldapPassword"), "")
+
+80
+00:00:32,358 --> 00:00:32,359
+317. setText(findTestObject("Page_info/Page_info_general/input_ldapUserName"), "OU=Members,DC=CANON-BS,DC=CO,DC=KR")
+
+81
+00:00:32,936 --> 00:00:32,936
+321. setText(findTestObject("Page_info/Page_info_general/input_ldapGroupName"), "OU=Groups,DC=CANON-BS,DC=CO,DC=KR")
+
+82
+00:00:33,445 --> 00:00:33,445
+325. click(findTestObject("Page_info/Page_info_general/a_limitConfig"))
+
+83
+00:00:33,519 --> 00:00:33,520
+329. waitForJQueryLoad(0, STOP_ON_FAILURE)
+
+84
+00:00:34,056 --> 00:00:34,057
+333. delay(1)
+
+85
+00:00:35,060 --> 00:00:35,060
+337. verifyOptionSelectedByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 3, 2)
+
+86
+00:00:35,264 --> 00:00:35,264
+341. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapServer"), "value", "LDAP_SERVER", 0)
+
+87
+00:00:35,326 --> 00:00:35,326
+345. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapPort"), "value", "389", 0)
+
+88
+00:00:35,359 --> 00:00:35,360
+349. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapId"), "value", "mappe@canon-bs.co.kr", 0)
+
+89
+00:00:35,395 --> 00:00:35,396
+353. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapPassword"), "value", "", 0)
+
+90
+00:00:35,433 --> 00:00:35,434
+357. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapUserName"), "value", "OU=Members,DC=CANON-BS,DC=CO,DC=KR", 0)
+
+91
+00:00:35,464 --> 00:00:35,464
+361. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapGroupName"), "value", "OU=Groups,DC=CANON-BS,DC=CO,DC=KR", 0)
+
+92
+00:00:35,497 --> 00:00:35,498
+365. selectOptionByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), loginType)
+
+93
+00:00:35,634 --> 00:00:35,639
+369. if (loginType.equals("0"))
+
+94
+00:00:35,642 --> 00:00:35,642
+1. verifyElementNotVisible(findTestObject("Page_info/Page_info_general/input_ldapServer"))
+
+95
+00:00:35,716 --> 00:00:35,717
+5. verifyElementNotVisible(findTestObject("Page_info/Page_info_general/input_ldapPort"))
+
+96
+00:00:35,758 --> 00:00:35,758
+9. verifyElementNotVisible(findTestObject("Page_info/Page_info_general/input_ldapId"))
+
+97
+00:00:35,803 --> 00:00:35,804
+13. verifyElementNotVisible(findTestObject("Page_info/Page_info_general/input_ldapPassword"))
+
+98
+00:00:35,843 --> 00:00:35,843
+17. verifyElementNotVisible(findTestObject("Page_info/Page_info_general/input_ldapUserName"))
+
+99
+00:00:35,879 --> 00:00:35,881
+21. verifyElementNotVisible(findTestObject("Page_info/Page_info_general/input_ldapGroupName"))
+
+100
+00:00:35,927 --> 00:00:35,928
+25. selectOptionByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 1)
+
+101
+00:00:36,136 --> 00:00:36,137
+29. setText(findTestObject("Page_info/Page_info_general/input_ldapServer"), ldapServer)
+
+102
+00:00:36,283 --> 00:00:36,284
+33. setText(findTestObject("Page_info/Page_info_general/input_ldapPort"), ldapPort)
+
+103
+00:00:36,469 --> 00:00:36,471
+37. setText(findTestObject("Page_info/Page_info_general/input_ldapId"), ldapId)
+
+104
+00:00:36,967 --> 00:00:36,968
+41. setText(findTestObject("Page_info/Page_info_general/input_ldapPassword"), ldapPassword)
+
+105
+00:00:37,134 --> 00:00:37,136
+45. setText(findTestObject("Page_info/Page_info_general/input_ldapUserName"), ldapUserName)
+
+106
+00:00:37,911 --> 00:00:37,912
+49. setText(findTestObject("Page_info/Page_info_general/input_ldapGroupName"), ldapGroupName)
+
+107
+00:00:38,715 --> 00:00:38,716
+53. selectOptionByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 0)
+
+108
+00:00:38,979 --> 00:00:38,980
+373. click(findTestObject("Page_info/Page_info_general/a_limitConfig"))
+
+109
+00:00:39,117 --> 00:00:39,120
+377. waitForJQueryLoad(0, STOP_ON_FAILURE)
+
+110
+00:00:39,819 --> 00:00:39,819
+381. delay(1)
+
+111
+00:00:40,822 --> 00:00:40,824
+385. verifyOptionSelectedByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), loginType, 2)
+
+112
+00:00:41,044 --> 00:00:41,045
+389. if (loginType.equals("0"))
+
+113
+00:00:41,046 --> 00:00:41,046
+1. selectOptionByIndex(findTestObject("Page_info/Page_info_general/select_loginType"), 1)
+
+114
+00:00:41,362 --> 00:00:41,363
+393. verifyElementAttributeValue(findTestObject("Page_info/Page_info_general/input_ldapServer"), "value", ldapServer, 0)
+

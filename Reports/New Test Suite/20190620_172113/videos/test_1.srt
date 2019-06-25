@@ -1,0 +1,116 @@
+1
+00:00:00,532 --> 00:00:00,535
+1. viewProject = false
+
+2
+00:00:00,551 --> 00:00:00,552
+5. viewPrint = true
+
+3
+00:00:00,553 --> 00:00:00,555
+9. viewScan = false
+
+4
+00:00:00,557 --> 00:00:00,559
+13. viewFax = false
+
+5
+00:00:00,560 --> 00:00:00,563
+17. viewElog = true
+
+6
+00:00:00,564 --> 00:00:00,568
+21. viewEDevice = true
+
+7
+00:00:00,569 --> 00:00:00,571
+25. viewSlog = false
+
+8
+00:00:00,572 --> 00:00:00,574
+29. openBrowser("")
+
+9
+00:00:13,040 --> 00:00:13,042
+33. maximizeWindow()
+
+10
+00:00:14,310 --> 00:00:14,311
+37. navigateToUrl("http://10.1.112.225:8080/")
+
+11
+00:00:16,013 --> 00:00:16,014
+41. waitForPageLoad(0)
+
+12
+00:00:16,212 --> 00:00:16,214
+45. setText(findTestObject("Page_login/input_loginID"), "Administrator")
+
+13
+00:00:16,933 --> 00:00:16,934
+49. setEncryptedText(findTestObject("Page_login/input_loginPW"), "8SQVv/p9jVScEs4/2CZsLw==")
+
+14
+00:00:17,229 --> 00:00:17,230
+53. click(findTestObject("Page_login/input_loginAction"))
+
+15
+00:00:17,869 --> 00:00:17,870
+57. waitForJQueryLoad(0, STOP_ON_FAILURE)
+
+16
+00:00:18,124 --> 00:00:18,127
+61. waitForElementNotVisible(findTestObject("Page_common/div_loading"), 5)
+
+17
+00:00:23,602 --> 00:00:23,607
+65. click(findTestObject("Page_info/a_info_service"))
+
+18
+00:00:24,099 --> 00:00:24,102
+69. delay(1)
+
+19
+00:00:25,260 --> 00:00:25,263
+73. click(findTestObject("Page_info/a_info_config"))
+
+20
+00:00:26,218 --> 00:00:26,219
+77. delay(1)
+
+21
+00:00:27,229 --> 00:00:27,240
+81. click(findTestObject("Page_info/a_info_device"))
+
+22
+00:00:27,595 --> 00:00:27,596
+85. delay(1)
+
+23
+00:00:28,598 --> 00:00:28,599
+89. click(findTestObject("Page_info/a_info_wm"))
+
+24
+00:00:29,084 --> 00:00:29,086
+93. delay(1)
+
+25
+00:00:30,088 --> 00:00:30,093
+97. click(findTestObject("Page_info/a_info_policy"))
+
+26
+00:00:30,522 --> 00:00:30,524
+101. delay(1)
+
+27
+00:00:31,528 --> 00:00:31,530
+105. click(findTestObject("Page_info/a_info_group"))
+
+28
+00:00:31,860 --> 00:00:31,862
+109. delay(1)
+
+29
+00:00:32,865 --> 00:00:32,867
+113. click(findTestObject("Page_info/a_info_user"))
+

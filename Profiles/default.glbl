@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'MAPP-E WEB'</initValue>
+      <name>SOLUTION</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'3.1.0'</initValue>
+      <name>VERSION</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
